@@ -1,3 +1,9 @@
+/*
+Theme: OneDark by sweatran
+URL: https://github.com/sweatran/typora-onedark-theme
+- Edited by RisGar -
+*/
+
 :root {
   /* dark color for background*/
   /* default color */
@@ -101,33 +107,46 @@
   --node-fill: var(--bg-color2);
 }
 
-/* font */
+/* fonts */
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
-  src: local("Open Sans Regular"), url("./onedark/400.woff") format("woff");
+  src: local("Open Sans Regular"),
+    url("./onedark/OpenSans_400.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
   font-weight: normal;
-  src: local("Open Sans Italic"), url("./onedark/400i.woff") format("woff");
+  src: local("Open Sans Italic"),
+    url("./onedark/OpenSans_400i.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
-  src: local("Open Sans Bold"), url("./onedark/700.woff") format("woff");
+  src: local("Open Sans Bold"),
+    url("./onedark/OpenSans_700.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
   font-weight: bold;
-  src: local("Open Sans Bold Italic"), url("./onedark/700i.woff") format("woff");
+  src: local("Open Sans Bold Italic"),
+    url("./onedark/OpenSans_700i.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FiraCode NF";
+  font-style: italic;
+  font-weight: bold;
+  src: local("FiraCode NF Regular"),
+    url("./onedark/Fira Code Regular Nerd Font Complete Windows Compatible.ttf")
+      format("ttf");
 }
 
 /* basic style */
@@ -136,8 +155,8 @@ html {
 }
 
 body {
-  font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Segoe UI", "Open Sans", "Clear Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   color: var(--text-color1);
   background: var(--bg-color1);
   line-height: 1.6;
@@ -167,15 +186,13 @@ body {
   margin-top: 0.5em;
   margin-bottom: 0em;
   line-height: 1em;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   padding-top: 0.3em;
 }
 
 #write h1 {
-  font-size: 2.5em;
+  font-size: 2.25em;
   padding-bottom: 0.5em;
-  border-bottom: 3px double var(--text-color5);
-  
+  border-bottom: 1px solid var(--text-color5);
 }
 
 /* #write h1:before {
@@ -183,9 +200,9 @@ body {
 }
  */
 #write h2 {
-  font-size: 2em;
+  font-size: 1.75em;
   padding-bottom: 0.5em;
-  border-bottom: 3px double var(--text-color5);
+  border-bottom: 1px solid var(--text-color5);
 }
 
 /* #write h2:before {
@@ -193,21 +210,20 @@ body {
 }
  */
 #write h3 {
-  font-size: 1.75em;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid var(--text-color5);
+  font-size: 1.5em;
+  line-height: 1.43;
 }
 
 #write h4 {
-  font-size: 1.55em;
+  font-size: 1.25em;
 }
 
 #write h5 {
-  font-size: 1.35em;
+  font-size: 1em;
 }
 
 #write h6 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* horizontal divider */
@@ -1088,6 +1104,7 @@ code {
   padding: 4px 4px 4px 4px;
   margin: 0px 0px 0px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family: "FiraCode NF";
 }
 
 /* codeblock */
